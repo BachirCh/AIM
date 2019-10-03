@@ -1,2 +1,143 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<section id="banner">
+        <div class="inner">
+          <h1>Azur Innovation Management</h1>
+          <p>Une approche smart capital qui associe au financement, le mentorat, le coaching comportemental, la formation, l'assistance technique et le monitoring.</p>
+        </div>
+        <%= video_tag "banner.mp4" %>
+        <!-- <video autoplay loop muted playsinline src="../../assets/images/banner.mp4"></video> -->
+     <!--    <video width="320" height="240" controls>
+  <source src="banner.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video> -->
+      <%= video_tag "banner.mp4", autoplay: true, loop: :loop, mute: :mute %>
+      </section>
+
+    <!-- Highlights -->
+      <section class="wrapper">
+        <div class="inner">
+          <header class="special">
+            <h2>Azur Innovation</h2>
+            <h4>Un fonds pour encourager l'innovation et l'entrepreneuriat.</h4>
+          </header>
+          <div class="highlights">
+            <section>
+              <div class="content">
+                <header>
+                  <!-- <a href="#" class="icon fa-vcard-o"><span class="label">Icon</span></a> -->
+                  <a href="#" class="icon fa-line-chart"><span class="label">Icon</span></a>
+                  <!-- <h3>Feugiat consequat</h3> -->
+                </header>
+                <p>Fonds à impact qui visent la maximisation de valeur pour l'ensemble des parties prenantes des projets financés: actionnaires, promoteurs, salariés...</p>
+              </div>
+            </section>
+            <section>
+              <div class="content">
+                <header>
+                  <!-- <a href="#" class="icon fa-files-o"><span class="label">Icon</span></a> -->
+                  <a href="#" class="icon fa-paper-plane-o"><span class="label">Icon</span></a>
+                  <!-- <h3>Ante sem integer</h3> -->
+                </header>
+                <p>Les meilleures pratiques en matière de Gouvernance et de Responsabilité Environnemental et Social de l'entreprise.</p>
+              </div>
+            </section>
+            <section>
+              <div class="content">
+                <header>
+                  <!-- <a href="#" class="icon fa-floppy-o"><span class="label">Icon</span></a> -->
+                  <a href="#" class="icon fa-globe"><span class="label">Icon</span></a>
+                  <!-- <h3>Ipsum consequat</h3> -->
+                </header>
+                <p>La performance que nous visons est une performance globale (et non pas spécifique aux actionnaires)</p>
+              </div>
+            </section>
+           <!--  <section>
+              <div class="content">
+                <header>
+                  <a href="#" class="icon fa-line-chart"><span class="label">Icon</span></a>
+                  <h3>Interdum gravida</h3>
+                </header>
+                <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+              </div>
+            </section>
+            <section>
+              <div class="content">
+                <header>
+                  <a href="#" class="icon fa-paper-plane-o"><span class="label">Icon</span></a>
+                  <h3>Faucibus consequat</h3>
+                </header>
+                <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+              </div>
+            </section>
+            <section>
+              <div class="content">
+                <header>
+                  <a href="#" class="icon fa-qrcode"><span class="label">Icon</span></a>
+                  <h3>Accumsan viverra</h3>
+                </header>
+                <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+              </div>
+            </section> -->
+          </div>
+        </div>
+      </section>
+
+    <!-- CTA -->
+      <section id="ct" class="wrapper" style="background-color: #f2f2f2; text-align: center;">
+        <div class="inner">
+          <h2>Soumettez votre projet</h2>
+          <!-- <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p> -->
+          <button class="btn btn-lg btn-soumettre" onclick=" window.open('https://docs.google.com/forms/d/e/1FAIpQLSfhQst3X40pSa9Ce87gIly3KZOYO__kOgD55rQrYQm0zhbeJQ/viewform?usp=sf_link','_blank')"><strong>Votre projet</strong></button>
+        </div>
+      </section>
+
+    <!-- Testimonials -->
+      <section class="wrapper">
+        <div class="inner">
+          <header class="special">
+            <h2>Faucibus consequat lorem</h2>
+            <p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.</p>
+          </header>
+          <div class="testimonials">
+            <section>
+              <div class="content">
+                <blockquote>
+                  <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+                </blockquote>
+                <div class="author">
+                  <div class="image">
+                    <%= image_tag "pic01.jpg", alt: "alttext" %>
+
+                  </div>
+                  <p class="credit">- <strong>Jane Doe</strong> <span>CEO - ABC Inc.</span></p>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="content">
+                <blockquote>
+                  <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+                </blockquote>
+                <div class="author">
+                  <div class="image">
+                    <%= image_tag "pic03.jpg", alt: "alttext" %>
+                  </div>
+                  <p class="credit">- <strong>John Doe</strong> <span>CEO - ABC Inc.</span></p>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="content">
+                <blockquote>
+                  <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+                </blockquote>
+                <div class="author">
+                  <div class="image">
+                    <%= image_tag "pic02.jpg", alt: "alttext" %>
+                  </div>
+                  <p class="credit">- <strong>Janet Smith</strong> <span>CEO - ABC Inc.</span></p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
